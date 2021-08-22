@@ -1,0 +1,15 @@
+<script>
+alert("Please type anything, and a question mark will be added to the end.")
+var myString = prompt("Unless of course, there is already a question mark...");
+
+function ensureQuestion(){
+  let arr = myString.length, qM = myString.indexOf("?") + 1;
+if (myString.charAt(arr) == qM){
+  console.log(myString + "?");
+  }
+  else {
+  console.log(myString); console.log("You thought you could trick me, didnt you...");
+  }
+}
+ensureQuestion();
+</script>
